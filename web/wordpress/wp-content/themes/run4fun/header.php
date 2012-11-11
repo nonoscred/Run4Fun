@@ -74,8 +74,8 @@
                                 <div class="nav-collapse collapse">
                                     <ul class="nav">
                                         <li><a href="/">Accueil</a></li>
-                                        <li><a href="/app_dev.php/course">Parcours</span></a></li>
-                                        <li><a href="/app_dev.php/user">Utilisateurs</span></a></li>
+                                        <li><a href="/course">Parcours</span></a></li>
+                                        <li><a href="/user">Utilisateurs</span></a></li>
                                         <li><a href="/events">Events</a></li>
                                         <li><a href="/concept">Concept</a></li>
                                     </ul>

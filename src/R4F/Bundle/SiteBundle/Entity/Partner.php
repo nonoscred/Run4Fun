@@ -62,6 +62,11 @@ class Partner
         return 'uploads/partners/';
     }
 
+    public function getImage()
+    {
+        return $this->image;
+    }
+
     /**
      * @ORM\PrePersist()
      * @ORM\PreUpdate()
