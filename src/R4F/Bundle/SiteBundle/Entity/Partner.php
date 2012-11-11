@@ -38,7 +38,7 @@ class Partner
     /**
      * @Assert\File(maxSize="2000000")
      */
-    public $image;
+    protected $image;
 
     public function getAbsoluteImagePath()
     {
