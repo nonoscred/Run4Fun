@@ -1,9 +1,9 @@
-r4fSiteBundle:
+R4FSiteBundle:
     resource: "@R4FSiteBundle/Controller/"
     type:     annotation
     prefix:   /
 
-r4fRunnerBundle:
+R4FRunnerBundle:
     resource: "@R4FRunnerBundle/Controller/"
     type:     annotation
     prefix:   /

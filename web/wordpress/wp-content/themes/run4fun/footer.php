@@ -40,8 +40,8 @@
                         <div class="span6">
                             <h4>Run4Fun</h4>
                             <ul>
-                                <li><a href="/course/list">Parcours</a></li>
-                                <li><a href="/user/list">Runners</a></li>
+                                <li><a href="/course">Parcours</a></li>
+                                <li><a href="/user">Runners</a></li>
                                 <li><a href="/events">Events</a></li>
                                 <li><a href="/concept">Concept</a></li>
                             </ul>

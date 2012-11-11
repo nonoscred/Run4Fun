@@ -1,0 +1,45 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-responsive.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('bundles/r4fsite/css/style.css') }}" type="text/css" />
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="wrap">
+        <header>
+            {% include "R4FSiteBundle::header.html.twig" %}
+        </header>
+
+        <div class="container-fluid">
+            <div class="row-fluid main">
+                <div class="span9 content">
+                    {% block r4f_main_content %}
+                    {% endblock %}
+                </div>
+                <div class="span3 side-context hidden-phone">
+                    {% block r4f_side_context %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+
+    <footer class="hidden-phone">
+        {% include "R4FSiteBundle::footer.html.twig" %}
+    </footer>
+
+{% endblock %}

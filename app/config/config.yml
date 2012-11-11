@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: %locale% }
+    translator:      { fallback: %locale% }
     secret:          %secret%
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -64,7 +64,7 @@ swiftmailer:
 fos_user:
     db_driver:     orm
     firewall_name: main
-    user_class:    R4F\RunnerBundle\Entity\User
+    user_class:    R4F\Bundle\RunnerBundle\Entity\User
     registration:
         form:
             type: r4f_user_registration
@@ -75,19 +75,19 @@ fos_user:
                 address: noreply@monsiteweb.com
                 sender_name:    Admin de run4fun.fr
 
-services:
-    sitebundle.listener.subscription:
-        class: R4F\SiteBundle\EventListener\SubscriptionListener
-        arguments:
-            mailer: "@mailer"
-        tags:
-            - { name: kernel.event_listener, event: sitebundle.subscription_added, method: onSubscriptionAddedEvent }
-    runnerbundle.registration.form.type:
-        class: R4F\RunnerBundle\Form\Type\RegistrationFormType
-        arguments: [%fos_user.model.user.class%]
-        tags:
-            - { name: form.type, alias: r4f_user_registration }
-    r4fmanager:
-        class: R4F\SiteBundle\Service\r4fManager
-        arguments: 
-            entityManager: "@doctrine.orm.entity_manager"
+#services:
+#    sitebundle.listener.subscription:
+#        class: R4F\SiteBundle\EventListener\SubscriptionListener
+#        arguments:
+#            mailer: "@mailer"
+#        tags:
+#            - { name: kernel.event_listener, event: sitebundle.subscription_added, method: onSubscriptionAddedEvent }
+#    runnerbundle.registration.form.type:
+#        class: R4F\RunnerBundle\Form\Type\RegistrationFormType
+#        arguments: [%fos_user.model.user.class%]
+#        tags:
+#            - { name: form.type, alias: r4f_user_registration }
+#    r4fmanager:
+#        class: R4F\SiteBundle\Service\r4fManager
+#        arguments: 
+#            entityManager: "@doctrine.orm.entity_manager"

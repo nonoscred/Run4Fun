@@ -20,8 +20,9 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new R4F\SiteBundle\R4FSiteBundle(),
-            //new R4F\RunnerBundle\R4FRunnerBundle(),
+            new R4F\Bundle\SiteBundle\R4FSiteBundle(),
+            new R4F\Bundle\RunnerBundle\R4FRunnerBundle(),
+            new IDCI\Bundle\AdminGeneratorBundle\IDCIAdminGeneratorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

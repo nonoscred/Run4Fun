@@ -1,0 +1,52 @@
+{% extends "R4FSiteBundle::layout.html.twig" %}
+
+{% block title %}
+    Utilisateurs - {{ parent() }}
+{% endblock %}
+
+{% block r4f_main_content %}
+    <h2>Liste des runners</h2>
+    <ul class="users">
+    {% for user in users %}
+        <li>
+            <a href="{{ path('user_show', { 'id': user.id  }) }}">{{ user.username }}</a>
+            <span class="details">{{ user.username }}<br />{{ user.email }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block r4f_side_context %}
+    <div class="side-box join-course">
+        <p class="top-text">
+            Vous n'avez effectué aucun parcours!
+        </p>
+        <p class="middle-text">
+            Qu'est-ce que vous attendez pour vous lancer?
+        </p>
+        <p class="middle btn btn-primary">
+            RUN!
+        </p>
+        <p class="bottom-text">
+            Et laisser Run4fun vous aidez à trouver des Runners autours de vous!
+        </p>
+    </div>
+
+    <div class="side-box create-course">
+        <p class="top-title">
+            CREATION DE PARCOURS
+        </p>
+        <p class="top-text">
+            Creer votre parcours en 1 minute chrono
+        </p>
+        <p class="middle-text">
+            Vous n'avez pas trouver de parcours qui vous correspond? 
+        </p>
+        <p class="middle btn btn-primary">
+            Creation de Parcours!
+        </p>
+        <p class="bottom-text">
+            RUN4FUN vous permet de creer votre parcours pour permettre à d'autre Runner de vous rejoindre!
+        </p>
+    </div>
+{% endblock %}
