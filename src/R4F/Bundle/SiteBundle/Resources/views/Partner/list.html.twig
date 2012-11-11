@@ -1,0 +1,5 @@
+{% for partner in partners %}
+  <a class="item{% if loop.first %} active{% endif %}" href="{{ partner.url }}" target="_blank">
+    <img src="{{ partner.imageWebPath }}" alt="{{ partner.name }}" title="{{ partner.name }}" />
+  </a>
+{% endfor %}

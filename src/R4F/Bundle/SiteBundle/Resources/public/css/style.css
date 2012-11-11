@@ -608,6 +608,11 @@ footer .partners .carousel {
   height: 100px;
 }
 
+footer .partners .item img {
+  height: 100px;
+  margin: 0 auto;
+}
+
 footer .partners .carousel .carousel-control {
   visibility: hidden;
 }
