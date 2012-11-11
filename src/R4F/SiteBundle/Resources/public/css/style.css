@@ -11,24 +11,61 @@ html, body {
     height: 100%;
 }
 
-body{
+body {
   background: #21ABA3 url("../images/r4f_background.png") repeat-x;
 }
 
 .wrap {
   height: auto !important;
-  margin-bottom: -200px;
+  margin-bottom: -150px;
   min-height: 100%;
 }
 
 .wrap .push {
     clear: both;
-    height: 200px;
+    height: 150px;
 }
 
-ul{
+ul {
   list-style: none;
 }
+
+@font-face {
+  font-family: lettergothicstd;
+  src: url('../font/lettergothicstd.otf');
+}
+
+@font-face {
+  font-family: andalemono;
+  src: url('../font/AndaleMono.ttf');
+}
+
+@font-face {
+  font-family: itc;
+  src: url('../font/ITC Avant Garde Gothic LT Extra Light.ttf');
+}
+
+/* Social links */
+.social_links ul {
+  overflow: auto;
+}
+
+.social_links ul > li {
+  float: left;
+  margin: 5px;
+}
+
+.social_links ul > li > a {
+  height: 21px;
+  width: 21px;
+  text-indent: -9999px;
+  display: block;
+  border: 1px solid transparent;
+}
+
+.social_links ul .facebook > a { background: url("../images/r4f_facebook.png") no-repeat;}
+.social_links ul .twitter > a { background: url("../images/r4f_twitter.png") no-repeat; }
+.social_links ul li:hover > a { border-color: #000; box-shadow: 0 0 4px #FFF; }
 
 /**
  * Header Style
@@ -131,34 +168,6 @@ header .content .social_links ul {
   float: right;
 }
 
-header .content .social_links ul > li > a {
-  height: 21px;
-  width: 21px;
-  text-indent: -9999px;
-  display: block;
-}
-
-header .content .social_links ul > li {
-  float: left;
-  margin: 5px;
-}
-
-header .content .social_links ul .facebook > a {
-  background: url("../images/r4f_facebook.png") no-repeat;
-}
-
-header .content .social_links ul .facebook:hover a {
-  background: url("../images/r4facebook.png") no-repeat;
-}
-
-header .content .social_links ul .twitter > a {
-  background: url("../images/r4f_twitter.png") no-repeat;
-}
-
-header .content .social_links ul .twitter:hover > a {
-  background: url("../images/r4ftwitter.png") no-repeat;
-}
-
 /* Header - Nav */
 header .content .navbar .nav > li > a {
   padding: 10px 30px;
@@ -178,21 +187,21 @@ header .content .navbar .nav > li:hover > a {
   text-shadow: 0 1px 0 #222;
 }
 
-header > .navbar > .navbar-inner > .container > .nav-collapse > .nav > li{
+header > .navbar > .navbar-inner > .container > .nav-collapse > .nav > li {
   height: 35px;
   background: url("../images/r4f_bar_menu.png") right center no-repeat;
   text-align: center;
   width: 239px;
 }
 
-header > .content > nav > ul > li > a:hover{
+header > .content > nav > ul > li > a:hover {
   background-color: #D3D3D3;
 }
 
 /*
  * Slider Style
  */
-#slider{
+#slider {
     clear: both;
     background-color: #fff;
     height: 250px;
@@ -202,7 +211,7 @@ header > .content > nav > ul > li > a:hover{
     border-right: none;
 }
 
-#slider > .r4f-carousel{
+#slider > .r4f-carousel {
     clear: both;
     background-color: #fff;
     height: 250px;
@@ -212,7 +221,7 @@ header > .content > nav > ul > li > a:hover{
     border-right: none;
 }
 
-#slider > .r4f-carousel > .r4f-inner{
+#slider > .r4f-carousel > .r4f-inner {
     height: 250px;
 }
 
@@ -243,6 +252,89 @@ header > .content > nav > ul > li > a:hover{
   padding-right: 20px;
 }
 
+/* Main - content */
+.main > .content > h2 {
+  border-left: 6px solid #0D872F;
+  color: #0D872F;
+  font-family: lettergothicstd;
+  font-size: 42px;
+  font-weight: normal;
+  padding: 4px 12px;
+  text-shadow: 1px 1px 1px #555555;
+  margin: 28px 0;
+}
+
+.main > .content > h3 {
+}
+
+/* Main - Concept */
+
+.concept .running,
+.concept .performance,
+.concept .partner,
+.concept .health,
+.concept .motivation {
+  margin: 16px 0;
+  min-height: 64px;
+}
+
+
+.concept .icon {
+  height: 59px;
+  width: 59px;
+  display: block;
+  text-indent: -9999px;
+}
+
+.concept .running .icon {
+  background: url("../images/icone_running.png") no-repeat;
+}
+
+.concept .performance .icon {
+  background: url("../images/icone_performance.png") no-repeat;
+}
+
+.concept .partner .icon {
+  background: url("../images/icone_partner.png") no-repeat;
+}
+
+.concept .health .icon {
+  background: url("../images/icone_health.png") no-repeat;
+}
+
+.concept .motivation .icon {
+  background: url("../images/icone_motivation.png") no-repeat;
+}
+
+.concept .separator {
+  border-right: 1px solid #AAA;
+  padding: 0 28px;
+  height: 490px;
+}
+
+.info-box {
+  border-radius: 16px;
+  padding: 16px;
+  font-size: small;
+  margin: 16px 0;
+  text-shadow: 0 0 1px #FFFFFF;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.info-box .btn {
+  display: block;
+}
+
+.create-race {
+  background: #EFB650;
+}
+
+.search-runner {
+  background: #E58734;
+}
+
+
+/* Main - side-context */
 .main > .side-context {
 }
 
@@ -475,8 +567,8 @@ header > .content > nav > ul > li > a:hover{
  * Footer Style
  */
 
-footer{
-  height: 200px;
+footer {
+  min-height: 150px;
   background-color: #BBBBBB;
   background: -moz-linear-gradient(top, #BBBBBB 0%, #CCCCCC 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#BBBBBB), color-stop(100%,#CCCCCC)); /* Chrome,Safari4+ */
@@ -491,41 +583,69 @@ footer{
   border-top: 1px solid #F0F0F0;
 }
 
-footer > .content > .span3 > .column{
-  margin-top: 25px;
+footer a {
+  color: #555;
 }
 
-footer > .content > .span3 > .column > li{
-  margin-bottom: 10px;
-  font-family: Trebuchet MS;
+footer a:hover {
+  color: #000;
 }
 
-footer > .content > .span3 > .column > li > a{
-  color: #FFF;
+footer .register {
+  background: url("../images/clock.png") no-repeat left bottom;
+  min-height: 150px !important;
 }
 
-footer > .content > .span3 > .column > li > a:hover{
-  color: #C8D20A;
-  text-decoration: none;
+footer .register .content {
+  margin: 14px 0 0 140px;
 }
 
-footer > .content > .span3 > .column > .title{
-  font-weight: normal;
-  padding-bottom: 20px;
+footer .register .content > p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
 }
 
-footer > .content > .span3 > .column > a >.bodysculpt{
-  background-image: url("../images/logo_fitnessea.png");
-  background-repeat: no-repeat;
-  height: 64px;
-  width: 162px;
-  text-indent: -9999px;
+footer .register .content > a {
+  margin-top: 24px;
 }
 
-footer > .content > .span3 > .column > .app_iphone{
-  background-image: url("../images/r4f_app_iphone.png");
-  background-repeat: no-repeat;
-  height: 110px;
-  width: 72px;
-  text-indent: -9999px;
+footer .partners {
+}
+
+footer .partners .carousel {
+  height: 100px;
+}
+
+footer .partners .carousel .carousel-control {
+  visibility: hidden;
+}
+
+footer .partners .carousel:hover .carousel-control {
+  visibility: visible;
+}
+
+footer .links {
+}
+
+footer .links > ul {
+  float: left;
+}
+
+footer .links > ul {
+  float: left;
+}
+
+footer .mobile {
+  background: url("../images/r4f_app_phone.png") no-repeat center bottom;
+  min-height: 150px !important;
+}
+
+footer .mobile .social_links {
+  width: 70px;
+  margin: 0 auto;
+}
+
+footer .mobile .social_links > ul {
+  margin: 0;
 }

@@ -4,37 +4,70 @@
             <div class="push"></div>
         </div><!-- wrap -->
 
-        <footer>
-            <div class="content">
-                <div class="span3">
-                    <ul class="column">
-                        <li class="title">Run4Fun.fr</li>
-                        <li><a href="/course/list">Parcours</a></li>
-                        <li><a href="/user/list">Runners</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="/concept">Concept</a></li>
-                    </ul>
-                </div>
-                <div class="span3">
-                    <ul class="column">
-                        <li class="title">Notre Partenaire</li>
-                        <a href="http://www.bodysculpt.fr" target="_blank"><li class="bodysculpt">bodysculpt.fr</li></a>
-                    </ul>
-                </div>
-                <div class="span3">
-                    <ul class="column">
-                        <li class="title">Besoin d'aide ?</li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/mentions-legales">Mentions légales</a></li>
-                    </ul>
+        <footer class="hidden-phone">
+            <div class="row-fluid content">
+
+                <div class="span3 register">
+                    <div class="content">
+                        <p>Pour commencer l'entrainement</p>
+                        <p>cliquez vite</p>
+                        <a class="btn btn-large btn-inverse" href="#">S'inscrire</a>
+                    </div>
                 </div>
 
-                <div class="span3">
-                    <ul class="column">
-                        <li class="app_iphone">Bientot l'application Mobile Run4fun</li>
-                        <li>RUN4FUN APP &reg;</li>
-                    </ul>
+                <div class="span3 partners">
+                    <h4>Nos partenaires</h4>
+                    <div id="carousel-partners" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <a class="item active" href="http://www.bodysculpt.fr" target="_blank">bodysculpt.fr</a>
+                            <a class="item" href="http://www.bodysculpt.fr" target="_blank">bodysculpt.fr</a>
+                            <a class="item" href="http://www.bodysculpt.fr" target="_blank">bodysculpt.fr</a>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#carousel-partners" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#carousel-partners" data-slide="next">&rsaquo;</a>
+                    </div>
+                    <script type="text/javascript">
+                      $(document).ready(function() {
+                          $('#carousel-partners').carousel();
+                      });
+                    </script>
+                </div>
+
+                <div class="span4 links">
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <h4>Run4Fun</h4>
+                            <ul>
+                                <li><a href="/course/list">Parcours</a></li>
+                                <li><a href="/user/list">Runners</a></li>
+                                <li><a href="/events">Events</a></li>
+                                <li><a href="/concept">Concept</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Besoin d'aide</h4>
+                            <ul class="span6">
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="/mentions-legales">Mentions légales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span2 mobile">
+                    <div class="social_links">
+                        <ul>
+                            <li class="facebook">
+                                <a href="http://www.facebook.com/run4fun.fr" target="_blank">Facebook</a>
+                            </li>
+                            <li class="twitter">
+                                <a href="http://www.twitter.com/Run4Fun_fr" target="_blank">twitter</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
