@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} ^/course [OR]
+    RewriteCond %{REQUEST_URI} ^/r4f [OR]
+    RewriteCond %{REQUEST_URI} ^/user [OR]
+    RewriteCond %{REQUEST_URI} ^/login [OR]
+    RewriteCond %{REQUEST_URI} ^/profile [OR]
+    RewriteCond %{REQUEST_URI} ^/register [OR]
+    RewriteCond %{REQUEST_URI} ^/reseting [OR]
+    RewriteCond %{REQUEST_URI} ^/_profiler [OR]
+    RewriteCond %{REQUEST_URI} ^/_wdt
+    RewriteRule ^(.*)$ /app_dev.php [QSA,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ /wordpress/index.php [QSA,L]
+</IfModule>
