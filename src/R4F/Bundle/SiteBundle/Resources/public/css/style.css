@@ -297,12 +297,6 @@ header > .content > nav > ul > li > a:hover {
   background: url("../images/icone_motivation.png") no-repeat;
 }
 
-.concept .separator {
-  border-right: 1px solid #AAA;
-  padding: 0 28px;
-  height: 490px;
-}
-
 .info-box {
   border-radius: 16px;
   padding: 16px;
