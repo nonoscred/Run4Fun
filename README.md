@@ -53,7 +53,7 @@ Then you can generate the needed tables for symfony with this command:
 
     php app/console doctrine:schema:update --force
 
-And load the wordpress table with the dump locate src/R4F/dump/wp_run4fun.sql.gz
+And load the wordpress table with the dump locate in src/R4F/dump/wp_run4fun.sql.gz
 
 Don't forget to fix cache and log permissions. For ubuntu users:
 
@@ -63,5 +63,5 @@ Don't forget to fix cache and log permissions. For ubuntu users:
 
 Go on http://local.run4fun
 
-To go in the symfony admin: http://local.run4fun/admin (No login and password for the moment)
-To go in the wordpress backend: http://local.run4fun/wordpress/wp-admin/index.php (admin/admin)
+To go in the symfony admin: http://local.run4fun/admin (No login and password for the moment) 
+To go in the wordpress backend: http://local.run4fun/wordpress/wp-admin/index.php (admin/admin) 
