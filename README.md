@@ -63,5 +63,5 @@ Don't forget to fix cache and log permissions. For ubuntu users:
 
 Go on http://local.run4fun
 
-To go in the symfony admin: http://local.run4fun/admin (No login and password for the moment) 
+To go in the symfony admin: http://local.run4fun/admin (No login and password for the moment)  
 To go in the wordpress backend: http://local.run4fun/wordpress/wp-admin/index.php (admin/admin) 
